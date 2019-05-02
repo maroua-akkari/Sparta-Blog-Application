@@ -1,0 +1,9 @@
+<h1>Welcome to my blog page</h1>
+<% @posts.each do |post| %>
+<div>
+  <h3>
+    <a href="/<%= post[:id] %>"><%= post[:title] %></a>
+    <p><%= post[:body] %></p>
+  </h3>
+</div>
+<% end %>
